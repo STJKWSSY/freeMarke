@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /freeMarker
+
+spring:
+  resources:
+    #  静态资源的路径
+    static-locations: classpath:/static/
+    #  访问静态资源的路径
+  mvc:
+    static-path-pattern: /static/**
+  devtools:
+    restart:
+      # 禁用重启
+      enabled: true
+      # 排除资源
+      exclude: static/**
+      # 监控额外的路径b不再类路径上
+      additional-paths: src/main/java,src/main/resources
+  freemarker:
+    # 禁用模板缓存
+    cache: false
+    # 编码格式
+    charset: utf-8
+    # freemarker模板后缀 默认是 .ftl
+    suffix: .ftl
+    # 是否为此技术启用MVC视图分辨率。
+    enabled: true
+    # Content-Type值
+    content-type: text/html
+
+
