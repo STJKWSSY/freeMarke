@@ -28,5 +28,9 @@ ${today?string("EEEE,MMMM dd, yyyy, hh:mm:ss a '('zzz')'")}
 ${foo?string("yes", "no")}
 
 
+<h1>插值结果为布尔值111</h1>
+<#assign foo1=true/>
+${foo1?string("yes", "no")}
+
 </body>
 </html>
