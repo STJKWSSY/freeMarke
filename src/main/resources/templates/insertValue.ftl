@@ -18,7 +18,7 @@
    ${answer?string.percent}
    ${answer}
 
-<h1>插值结果为日期值</h1>
+<h1>插值结果为日期值1111</h1>
 ${today?string("yyyy-MM-dd HH:mm:ss zzzz")}
 ${today?string("EEE,MMM d, ''yy")}
 ${today?string("EEEE,MMMM dd, yyyy, hh:mm:ss a '('zzz')'")}
