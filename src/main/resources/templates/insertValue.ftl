@@ -23,7 +23,7 @@ ${today?string("yyyy-MM-dd HH:mm:ss zzzz")}
 ${today?string("EEE,MMM d, ''yy")}
 ${today?string("EEEE,MMMM dd, yyyy, hh:mm:ss a '('zzz')'")}
 
-<h1>插值结果为布尔值</h1>
+<h1>插值结果为布尔值111</h1>
 <#assign foo=true/>
 ${foo?string("yes", "no")}
 
