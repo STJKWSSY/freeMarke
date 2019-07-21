@@ -63,15 +63,19 @@ ${lala!"abc"}
 <#assign scores={"语文":78, "数学":89, "英语":87}> ${scores.语文}
 
 <h1>例子</h1>
-<#--//用于判断如果存在,就输出这个值-->
+<#--用于判断如果存在,就输出这个值-->
 ${book.name?if_exists }
-<#--//默认值xxx-->
+<#--默认值xxx-->
 ${book.name!"xxx"}
-${book.date?string('yyyy-MM-dd')} //日期格式
-${book?string.number} 20 //三种不同的数字格式
-${book?string.currency} <#-- $20.00 -->
-${book?string.percent} <#-- 20% -->
-${.now?datetime}//当前时间戳
-
+<#--日期格式-->
+${book.date?string('yyyy-MM-dd')}
+<#-- 20 三种不同的数字格式-->
+${book?string.number}
+<#-- $20.00 -->
+${book?string.currency}
+<#-- 20% -->
+${book?string.percent}
+<#--当前时间戳-->
+${.now?datetime}
 </body>
 </html>
